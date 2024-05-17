@@ -13,72 +13,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <link type="text/css" rel="stylesheet" href="../static/css/style.css" />
-
-    <link rel="icon" href="../static/img/shoe.ico" />
-
+    <link type="text/css" rel="stylesheet" href="../static/css/estilos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+  
+    <link rel="icon" href="../static/img/logoEcommerce.ico" />
+  
     <title>Ecommerce</title>
     <!-- css de metiras-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 
-    <style>
-        .ok-btn {
-            background-color: #EC4815;
-            border-radius: 20px;
-            /* Ajusta este valor según el grado de redondez que desees */
-            padding: 10px 20px;
-            /* Ajusta el padding según sea necesario */
-            border: 2px;
-            color: white;
-            width: 200px;
-            font-family: 'Montserrat', sans-serif;
-            /* Fuente Montserrat */
-        }
-
-        .cancel-btn {
-            background-color: #F5F5F5;
-            border-radius: 20px;
-            /* Ajusta este valor según el grado de redondez que desees */
-            padding: 10px 20px;
-            /* Ajusta el padding según sea necesario */
-            border: 2px solid #171E43;
-            width: 200px;
-            font-family: 'Montserrat', sans-serif;
-            /* Fuente Montserrat */
-        }
-
-        footer {
-            background-color: #171E43;
-            /* Azul */
-            color: white;
-            /* Texto blanco */
-            padding: 20px 0;
-            /* Espacio interno */
-            text-align: center;
-            /* Alineación del texto al centro */
-            margin-bottom: 100px;
-            height: 70px;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
     <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar" style="background-color: #171E43">
-            <div class="container-fluid">
-                <a class="navbar-brand nombre"> Calzamundo<strong>Shoes</strong> </a>
-
+        <nav class="navbar">
+            <div class="logo-container">
+              <img src="../static/img/logoEcommerce.png" alt="Calzamundo Logo" class="logo">
             </div>
-        </nav>
-        <div class="container mt-3">
+          </nav>
+        <div class="container mt-3 " style="width: 50%;">
             <div class="row">
                 <!--Inicio del card-->
                 <div class="card text-center">
-                    <div class="card-body">
+                    <div class="card-body ">
                         <h1 class="card-title">Pago</h1>
                         <br>
                         <hr>
@@ -90,14 +47,14 @@
                                     <div class="col-md">
                                         <div class="form-floating">
                                             <input th:field="*{numero_tarjeta}" type="number" id="numero" name="numero"
-                                                class="form-control" placeholder="Numero tarjeta" required />
+                                                class="form-control round-input" placeholder="Numero tarjeta" required />
                                             <label for="floatingInput">* Número de tarjeta </label>
                                         </div>
                                     </div>
                                     <div class="col-md">
                                         <div class="form-floating">
                                             <input th:field="*{cvv}" type="number" id="cvv" name="cvv"
-                                                class="form-control" placeholder="CVV" />
+                                                class="form-control round-input" placeholder="CVV" />
                                             <label for="floatingInput">* CCV</label>
                                         </div>
                                     </div>

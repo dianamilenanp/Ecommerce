@@ -1,0 +1,144 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Aplica la fuente Roboto a todo el texto en el cuerpo de la página */
+}
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    max-width: 80px;
+    /* Ajusta el tamaño máximo del logo según tus preferencias */
+    height: auto;
+    /* Permite que la altura del logo se ajuste automáticamente para mantener la proporción */
+}
+
+.actions {
+    display: flex;
+}
+
+.action-link {
+    color: orange;
+    text-decoration: none;
+    margin-left: 20px;
+    /* Espacio entre los enlaces de acción */
+}
+
+.orange-icon {
+    color: orange;
+    margin-right: 5px;
+    /* Espacio entre el icono y el texto */
+}
+
+h2,
+p {
+    text-align: center;
+}
+
+.ok-btn {
+    background-color: #EC4815;
+    border-radius: 20px;
+    /* Ajusta este valor según el grado de redondez que desees */
+    padding: 10px 20px;
+    /* Ajusta el padding según sea necesario */
+    border: 2px;
+    color: white;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Envuelve los elementos en múltiples líneas si no caben en una sola línea */
+}
+
+.category {
+    flex: 0 0 33.33%;
+    /* Cada elemento ocupa un tercio del contenedor */
+    padding: 0 15px;
+    /* Espacio entre las imágenes */
+}
+
+.category img {
+    width: 100%;
+    /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;
+    /* La altura se ajusta automáticamente para mantener la proporción */
+}
+
+footer {
+    padding-top: 20px;
+    /* Ajusta el padding superior según tus necesidades */
+    padding-bottom: 20px;
+    /* Ajusta el padding inferior según tus necesidades */
+}
+
+a {
+    text-decoration: none;
+    /* Quita el subrayado */
+}
+
+a:hover {
+    text-decoration: none !important;
+    /* Evita que haya efecto hover */
+}
+
+.round-input {
+
+    border-radius: 20px;
+    /* Ajusta el radio de borde según tu preferencia */
+    border: 2px solid #171E43;
+    /* Establece un borde sólido de color azul */
+    padding: 10px;
+    /* Ajusta el relleno dentro del input según tu preferencia */
+
+}
+
+nav,
+footer {
+    background-color: #171E43;
+}
+
+.cancel-btn {
+    background-color: #F5F5F5;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid #171E43;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    color: #171E43;
+  }
+  
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        /* Apila los elementos en columnas */
+        align-items: stretch;
+        /* Ajusta los elementos a lo largo del eje vertical */
+    }
+
+    .actions {
+        margin-top: 10px;
+        /* Espacio entre el logo y los enlaces de acción en pantallas pequeñas */
+    }
+
+    .action-link {
+        margin: 10px 0;
+        /* Espacio entre los enlaces de acción en pantallas pequeñas */
+    }
+}
